@@ -1,4 +1,4 @@
-{% assign resource_type = resource_types.employee %}
+{% assign item_type = item_types.employee %}
 
 <div class="sc_block container">
 <h2>Employee Table</h2>
@@ -12,17 +12,17 @@
   </thead>
 
   <tbody>
-    {% for resource in resource_type.resources %}
+    {% for items in items_type.items %}
 
     <tr>
       <td>
-       {{ resource.contents.first_name }}
+       {{ item.contents.first_name }}
       </td>
       <td>
-       {{ resource.contents.last_name }}
+       {{ item.contents.last_name }}
       </td>
       <td>
-        {{ resource.contents.job_title }}
+        {{ item.contents.job_title }}
       </td>
     </tr>
   
