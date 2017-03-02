@@ -1,0 +1,32 @@
+{% assign resource_type = resource_types.employee %}
+
+<div class="sc_block container">
+<h2>Employee Table</h2>
+<hr>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th colspan="2">Employee</th>
+      <th>Job Title</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for resource in resource_type.resources %}
+
+    <tr>
+      <td>
+       {{ resource.contents.first_name }}
+      </td>
+      <td>
+       {{ resource.contents.last_name }}
+      </td>
+      <td>
+        {{ resource.contents.job_title }}
+      </td>
+    </tr>
+  
+    {% endfor %}          
+  </tbody>
+</table>
+</div>

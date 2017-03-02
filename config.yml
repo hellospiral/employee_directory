@@ -1,0 +1,38 @@
+app:
+  title: 'Employee Directory'
+  description: 'A directory app for employees'
+  author: 'Bradley Gauthier'
+  version: '0.0.1'
+wrap:
+  title: 'Employee Directory Basic Wrap'  
+item_types:
+  department:
+    title: 'Department'
+    description: 'The departments in the company'
+    fields:
+      id: 'uuid'
+      title: 'string'
+      description: 'text'
+      location: 'string'
+  employee:
+    title: 'Employee'
+    description: 'The employees of the company'
+    fields:
+      id: 'uuid'
+      department_type: 'string'
+      department_id: 'uuid'
+      first_name: 'string'
+      last_name: 'string'
+      job_title: 'string'
+      bio: 'text'
+      hired_at: 'datetime'
+blocks:
+  department_list:
+    title: 'Department List'
+    description: 'List of all departments'
+  employee_overview:
+    title: 'Employee Overview'
+    description: 'Responsive calendar block'
+  employee_table:
+    title: 'Employee Table'
+    description: 'Deep dive into employees'
