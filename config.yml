@@ -1,7 +1,7 @@
 app:
   title: 'Employee Directory'
   description: 'A directory app for employees'
-  author: 'Merve Carlsen'
+  author: 'Merve Kierlson'
   version: '0.0.1'
 wrap:
   title: 'Employee Directory Basic Wrap'  
